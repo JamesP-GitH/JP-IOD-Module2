@@ -1,0 +1,17 @@
+The following live sample shows a biography, which has been styled using CSS. The CSS properties that are used are as follows — each one links to its property page on MDN, which will give you more examples of its use.
+
+font-family
+color
+border-bottom
+font-weight
+font-size
+font-style
+text-decoration
+
+In the example, there is some CSS already in place which selects parts of the document using element selectors, classes, and pseudo-classes. Make the following changes to this CSS:
+
+Make the level one heading pink, using the CSS color keyword hotpink.
+Give the heading a 10px dotted border-bottom which uses the CSS color keyword purple.
+Make the level 2 heading italic.
+Give the ul used for the contact details a background-color of #eeeeee, and a 5px solid purple border. Use some padding to push the content away from the border.
+Make the links green on hover.
