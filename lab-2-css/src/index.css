@@ -1,24 +1,119 @@
 /* I. Selectors */
 /* Put styles for questions 1.1, 1.2, 1.3 and 1.4 here */
+article {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.style-me1 {
+    color: red;
+}
+
+#style-me2 {
+    color: blue;
+}
+
+.style-me1#style-me2 {
+    color: purple;
+}
 
 /* Put styles for questions 2.1 and 2.2 here */
+.my-descendants-are-styled p {
+    background: red;
+}
 
+.my-children-are-styled > p {
+    background: lightgreen;
+}
 
 /* II. Box model and common properties */
 /* Put styles for questions 1-8 here */
-
+.box {
+    background-image: url("/lab-2-css/assets/images/img1.png");
+    background-color: red;
+    margin: 10px 20px 10px 15px;
+    padding: 70px;
+    width: 500px;
+    height: 500px !important;
+    border: 5px solid blue;
+    box-sizing: border-box;
+    overflow: auto;
+    outline: 10px solid;
+    border-radius: 50%;
+}
 
 /* III. Positioning */
 /* Put styles for questions 1-3 here */
+.position-absolute {
+    position: absolute;
+    top: 0;
+    left: 60px;
+    background-color: lightgreen;
+}
 
+.position-relative {
+    position: relative;
+    background-color: lightblue;
+}
+
+.position-sticky {
+    position: sticky;
+    background-color: lightyellow;
+    top: 0;
+}
 
 /* IV. Styling text */
 /* Put styles for questions 1-10 here */
-
+.text-style {
+    color: #ff5733;
+    font-size: 24px;
+    line-height: 2.5em;
+    font-weight: 400;
+    font-family: "Bebas Neue", sans-serif;
+    text-align: center;
+    letter-spacing: 1px;
+    word-spacing: 5px;
+    text-transform: uppercase; /* font chosen didnt have difference in upper or lowercase */
+    text-decoration: underline;
+}
 
 /* V. Styling links */
 /* Put styles for questions 1-3 here */
+a,
+a:link {
+    color: #0066cc;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
 
+a:hover,
+a:active,
+a:focus {
+    color: #003366;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #990099;
+    font-style: italic;
+}
 
 /* VI. calc() */
 /* Put styles for questions 1-3 here */
+.calc-style {
+    width: calc(100vw - 100px);
+    background-color: rgba(0, 100, 255, 0.2);
+}
+
+.fixed-width-col {
+    width: 350px;
+    display: inline-block;
+}
+
+.fluid-col {
+    display: inline-block;
+    width: calc(100% - 400px);
+    background-color: rgba(0, 255, 0, 0.2);
+}
