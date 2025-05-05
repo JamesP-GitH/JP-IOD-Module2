@@ -1,21 +1,121 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Module 2 index</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="An index HTML page for Module 2 work for IOD" />
+    <meta name="keywords" content="HTML, meta tags, SEO, web development" />
+    <meta name="author" content="James P" />
 
-<head>
-</head>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
 
-<body>
-  <header>
-    <nav>
-      <!-- works like <a href="/index.html">Home</a> -->
-      <a href="/">Home</a>
-    </nav>
-  </header>
+  <body>
+    <header>
+      <nav>
+        <!-- works like <a href="/index.html">Home</a> -->
+        <a href="/">Home</a>
+        <a href="./form.html">Form</a>
+      </nav>
+    </header>
 
-  <main>  
-  </main>
+    <main>
+      <h1>HTML Examples</h1>
 
-  <footer>Copyright &copy; 2024</footer>
-</body>
+      <article>
+        <h2>Practice of different Elements:</h2>
 
+        <div>HTML</div>
+        <div>CSS</div>
+        <div>JavaScript</div>
+
+        <p>
+          <span>Span 1</span>
+          <span>Span 2</span>
+          <span>Span 3</span>
+        </p>
+
+        <p>p represents paragraph without preserving spacing</p>
+        <pre>
+Text in         a pre element
+is displayed in a fixed-width
+font, and it preserves
+both      spaces and
+line breaks
+                </pre
+        >
+
+        <ul>
+          <li>Apple</li>
+          <li>Orange</li>
+          <li>Banana</li>
+          <li>Pear</li>
+        </ul>
+
+        <ol>
+          <li>Blue</li>
+          <li>Red</li>
+          <li>
+            Green -
+            <ul>
+              <li>light green</li>
+              <li>dark green</li>
+            </ul>
+          </li>
+        </ol>
+      </article>
+
+      <article>
+        <h2>HTML Table Practice</h2>
+
+        <table>
+          <thead>
+            <tr>
+              <th>First header</th>
+              <th colspan="2">Second header</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>First cell - first row</td>
+              <td>Second cell - first row</td>
+              <td>Third cell - first row</td>
+            </tr>
+            <tr>
+              <td>First cell - second row</td>
+              <td rowspan="2">Second cell - second row</td>
+              <td>Third cell - second row</td>
+            </tr>
+            <tr>
+              <td>First cell - third row</td>
+              <td>Second cell - third row</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+
+      <article>
+        <h2>HTML Img Video Audio Practice</h2>
+
+        <img src="https://picsum.photos/400/400" alt="example image" height="200px" width="200px" />
+        <img src="/lab-1-html/src/assets/html_lab_image.jpg" alt="cloudy sky" height="200px" width="200px" />
+
+        <video controls width="250">
+          <source src="./assets/flower.webm" type="video/webm" />
+          Sorry, your browser doesn't support embedded videos.
+        </video>
+
+        <audio controls src="./assets/t-rex-roar.mp3">Your browser does not support the <code>audio</code> element.</audio>
+      </article>
+    </main>
+
+    <footer>Copyright &copy; 2024</footer>
+  </body>
 </html>
