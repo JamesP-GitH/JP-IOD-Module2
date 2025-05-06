@@ -9,19 +9,19 @@ a {
 }
 
 .background-1 {
-    background: #68B0AB;
+    background: #68b0ab;
 }
 
 .background-2 {
-    background: #8FC0A9;
+    background: #8fc0a9;
 }
 
 .background-3 {
-    background: #C8D5B9;
+    background: #c8d5b9;
 }
 
 .background-4 {
-    background: #FAF3DD;
+    background: #faf3dd;
 }
 
 .m-20 {
@@ -38,4 +38,66 @@ a {
 
 .w-80 {
     width: 80px;
+}
+/* --- 2. Basic Flexbox: --- */
+.flex-container {
+    display: flex;
+    /* --- 6. Changing Direction: --- */
+    flex-direction: row; /* flex-direction: row-reverse; */
+}
+
+.flex-item-1 {
+    flex: 1;
+}
+.flex-item-2 {
+    flex: 2;
+}
+.flex-item-3 {
+    flex: 3;
+}
+.flex-item-4 {
+    flex: 4;
+}
+/* -------------------------- */
+
+/* --- 3. Centering with Flexbox: --- */
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+/* -------------------------- */
+
+/* --- 4. Assigning leftover space: --- */
+.flex-space-between {
+    justify-content: space-between;
+}
+/* -------------------------- */
+
+/* --- 5. Wrapping items: --- */
+.flex-basis-item-50 {
+    flex-basis: 25%;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+/* -------------------------- */
+
+/* --- 7. Flexbox For Horizontal Navigation: --- */
+.flex-menu {
+    justify-content: center; /* 7.2 justify-content: right; (flex-end also works) */
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.flex-menu li {
+    flex-grow: 1;
+    text-align: center;
+    margin: 0px 1px;
+    padding: 15px;
+}
+
+.fourth-item {
+    order: 1;
 }
