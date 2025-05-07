@@ -14,8 +14,18 @@
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .audiowide-regular {
     font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.hanken-grotesk-400 {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
 }
@@ -33,12 +43,28 @@ nav {
 
 h2 {
     color: var(--color-highlight);
-    margin-bottom: 10px;
     margin-top: 20px;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1.2em;
 }
 
 a {
     color: var(--color-accent);
+}
+
+p,
+span {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+strong {
+    color: var(--color-accent);
+    font-weight: 600;
 }
 
 /* === Sidebar === */
@@ -105,7 +131,10 @@ main {
 }
 
 #about,
-#projects {
+#projects,
+#experience,
+#education,
+#contact {
     padding: 60px 40px;
     max-width: 800px;
     margin: 0 auto;
@@ -145,7 +174,7 @@ main {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: var(--color-bg-opac); /* semi-transparent overlay */
+    background-color: var(--color-bg-opac);
     z-index: 2;
     pointer-events: none;
 }
@@ -175,29 +204,8 @@ main {
 
 /* === About === */
 
-#about {
-    padding: 60px 40px;
-    max-width: 800px;
-    margin: 0 auto;
-    color: var(--color-text);
-    font-size: 1.1rem;
-    line-height: 1.8;
-}
-
-#about h2 {
-    font-size: 2rem;
-    margin-bottom: 1.2em;
-    text-align: center;
-    color: var(--color-accent);
-}
-
 #about p {
     margin-bottom: 1.2em;
-}
-
-#about strong {
-    color: var(--color-accent);
-    font-weight: 600;
 }
 
 #about em {
@@ -225,8 +233,11 @@ main {
 }
 .skillsGrid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns */
-    gap: 20px 40px; /* vertical and horizontal gap */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 40px;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
 }
 
 .bar {
@@ -240,4 +251,112 @@ main {
 .fill {
     height: 100%;
     background: linear-gradient(90deg, var(--color-accent), var(--bar-fill));
+}
+
+/* === Projects === */
+#projects {
+    padding: 60px 40px;
+    background-color: var(--color-bg-light);
+    color: var(--color-text);
+}
+
+.project {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.project h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--color-accent);
+}
+
+.project p {
+    margin-bottom: 0.8em;
+    line-height: 1.6;
+}
+
+.projectImage {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.projectImage img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 40px;
+    opacity: 80%;
+}
+
+/* === Experience === */
+
+.job {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.job h3 {
+    font-size: 1.8rem;
+    color: var(--color-accent);
+    margin-bottom: 0.6em;
+}
+
+.job p {
+    margin-bottom: 1em;
+}
+
+/* === Education === */
+
+#education h3 {
+    font-size: 1.5rem;
+    color: var(--color-accent);
+    margin-bottom: 0.6em;
+}
+
+#education p,
+#education li {
+    margin-bottom: 1em;
+}
+
+#education ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.school,
+.university {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+/* === Contact === */
+#contact a {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+.contactLinks {
+    margin-top: 1.5em;
+}
+
+.contactLinks a {
+    margin: 0 10px;
+    font-size: 1.4rem;
+}
+
+.contactCont {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
 }
