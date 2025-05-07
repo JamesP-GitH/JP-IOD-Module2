@@ -369,3 +369,18 @@ main {
     margin-bottom: 10px;
     border-radius: 8px;
 }
+
+/* === Footer === */
+
+footer {
+    background-color: var(--color-primary);
+    color: var(--color-text-opac);
+    text-align: center;
+    padding: 2px 20px;
+    margin-top: 60px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    font-size: 14px;
+}
