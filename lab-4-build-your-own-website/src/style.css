@@ -261,6 +261,45 @@ main {
 .fill {
     height: 100%;
     background: linear-gradient(90deg, var(--color-accent), var(--bar-fill));
+    width: 0;
+    transition: width 2s ease-out;
+}
+
+/* === Specific Skill Levels === */
+.skill-html .fill {
+    --bar-width: 65%;
+}
+
+.skill-css .fill {
+    --bar-width: 60%;
+}
+
+.skill-javascript .fill {
+    --bar-width: 70%;
+}
+
+.skill-python .fill {
+    --bar-width: 45%;
+}
+
+.skill-java .fill {
+    --bar-width: 80%;
+}
+
+.skill-csharp .fill {
+    --bar-width: 95%;
+}
+
+.skill-cplus .fill {
+    --bar-width: 92%;
+}
+
+.skill-processing .fill {
+    --bar-width: 35%;
+}
+
+.bar.in-view .fill {
+    width: var(--bar-width); /* Animate the width to the specified value */
 }
 
 /* === Projects === */
