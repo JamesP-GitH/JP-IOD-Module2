@@ -423,3 +423,31 @@ footer {
 footer p {
     font-size: 14px;
 }
+
+@media (max-width: 1024px) {
+    #sidebar {
+        width: 220px;
+        padding: 30px;
+    }
+
+    main {
+        margin-left: 240px;
+    }
+
+    .splashHead h1 {
+        font-size: 3.5em;
+    }
+
+    .splashHead p {
+        font-size: 1.5em;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    p,
+    span {
+        font-size: 18px;
+    }
+}
