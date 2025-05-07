@@ -4,10 +4,16 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Audiowide&family=Bebas+Neue&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
         <title>Document</title>
     </head>
     <body>
-        <header id="sidebar">
+        <header id="sidebar" class="audiowide-regular">
             <section id="hero">
                 <h1>James P</h1>
                 <p>Programmer</p>
@@ -27,97 +33,106 @@
             </nav>
         </header>
         <main>
-            <section id="splash">img</section>
-            <section id="about">
-                <h2>About</h2>
-                <p>
-                    Hi, I'm James P, a programmer passionate about coding and problem-solving. I specialize in Python and JavaScript, and I
-                    enjoy building web apps and video games.
-                </p>
-                <p>
-                    I love learning new technologies and tackling challenges. I'm always looking for ways to improve and create better
-                    solutions.
-                </p>
-                <p>Feel free to reach out if you want to collaborate.</p>
+            <section id="splash">
+                <div class="splashBlur"></div>
+                <div class="splashHead audiowide-regular">
+                    <h1>James P</h1>
+                    <p>Programmer</p>
+                </div>
             </section>
+            <div id="mainContainer">
+                <section id="about">
+                    <h2>About</h2>
+                    <p>
+                        Hi, I'm James P, a programmer passionate about coding and problem-solving. I specialize in Python and JavaScript,
+                        and I enjoy building web apps and video games.
+                    </p>
+                    <p>
+                        I love learning new technologies and tackling challenges. I'm always looking for ways to improve and create better
+                        solutions.
+                    </p>
+                    <p>Feel free to reach out if you want to collaborate.</p>
+                </section>
 
-            <section id="skills">
-                <h2>Skills</h2>
-                <div class="skillsGrid">
-                    <div class="skill">
-                        <span>HTML</span>
-                        <div class="bar"><div class="fill" style="width: 65%"></div></div>
+                <section id="skills">
+                    <h2>Skills</h2>
+                    <div class="skillsGrid">
+                        <div class="skill">
+                            <span>HTML</span>
+                            <div class="bar"><div class="fill" style="width: 65%"></div></div>
+                        </div>
+                        <div class="skill">
+                            <span>CSS</span>
+                            <div class="bar"><div class="fill" style="width: 60%"></div></div>
+                        </div>
+                        <div class="skill">
+                            <span>JavaScript</span>
+                            <div class="bar"><div class="fill" style="width: 70%"></div></div>
+                        </div>
+                        <div class="skill">
+                            <span>Python</span>
+                            <div class="bar"><div class="fill" style="width: 45%"></div></div>
+                        </div>
+                        <div class="skill">
+                            <span>Java</span>
+                            <div class="bar"><div class="fill" style="width: 80%"></div></div>
+                        </div>
+                        <div class="skill">
+                            <span>C#</span>
+                            <div class="bar"><div class="fill" style="width: 92%"></div></div>
+                        </div>
+                        <div class="skill">
+                            <span>C++</span>
+                            <div class="bar"><div class="fill" style="width: 95%"></div></div>
+                        </div>
+                        <div class="skill">
+                            <span>Processing 3</span>
+                            <div class="bar"><div class="fill" style="width: 35%"></div></div>
+                        </div>
                     </div>
-                    <div class="skill">
-                        <span>CSS</span>
-                        <div class="bar"><div class="fill" style="width: 60%"></div></div>
-                    </div>
-                    <div class="skill">
-                        <span>JavaScript</span>
-                        <div class="bar"><div class="fill" style="width: 70%"></div></div>
-                    </div>
-                    <div class="skill">
-                        <span>Python</span>
-                        <div class="bar"><div class="fill" style="width: 45%"></div></div>
-                    </div>
-                    <div class="skill">
-                        <span>Java</span>
-                        <div class="bar"><div class="fill" style="width: 80%"></div></div>
-                    </div>
-                    <div class="skill">
-                        <span>C#</span>
-                        <div class="bar"><div class="fill" style="width: 92%"></div></div>
-                    </div>
-                    <div class="skill">
-                        <span>C++</span>
-                        <div class="bar"><div class="fill" style="width: 95%"></div></div>
-                    </div>
-                    <div class="skill">
-                        <span>Processing 3</span>
-                        <div class="bar"><div class="fill" style="width: 35%"></div></div>
-                    </div>
-                </div>
-            </section>
+                </section>
 
-            <section id="projects">
-                <h2>Projects</h2>
-                <div class="project">
-                    <h3>"Project &#8501;"</h3>
-                    <p>Working title for game being worked on.</p>
-                    <p>The game is a classic style shooter, or 'Boomer shooter', ala the original Doom.</p>
-                    <a href="#"></a>
-                </div>
-            </section>
-            <section id="experience">
-                <h2>Experience</h2>
-                <div class="job">
-                    <h3>Jobs</h3>
-                    <ul>
-                        <li>Debt Collector</li>
-                        <li>Freelance work</li>
-                    </ul>
-                </div>
-            </section>
-            <section id="education">
-                <h2>Education</h2>
-                <div class="school">
-                    <h3>School</h3>
-                    <p>HSC at IGS</p>
-                </div>
-                <div class="university">
-                    <h3>University</h3>
-                    <ul>
-                        <li>Western Sydney University</li>
-                        <li>TAFE</li>
-                        <li>Institute of Date</li>
-                    </ul>
-                </div>
-            </section>
-            <section id="contact">
-                <h2></h2>
-                <p></p>
-                <p></p>
-            </section>
+                <section id="projects">
+                    <h2>Projects</h2>
+                    <div class="project">
+                        <h3>"Project &#8501;"</h3>
+                        <p>Working title for game being worked on.</p>
+                        <p>The game is a classic style shooter, or 'Boomer shooter', ala the original Doom.</p>
+                        <a href="#"></a>
+                    </div>
+                </section>
+                <section id="experience">
+                    <h2>Experience</h2>
+                    <div class="job">
+                        <h3>Jobs</h3>
+                        <ul>
+                            <li>Debt Collector</li>
+                            <li>Freelance work</li>
+                        </ul>
+                    </div>
+                </section>
+                <section id="education">
+                    <h2>Education</h2>
+                    <div class="school">
+                        <h3>School</h3>
+                        <p>HSC at IGS</p>
+                    </div>
+                    <div class="university">
+                        <h3>University</h3>
+                        <ul>
+                            <li>Western Sydney University</li>
+                            <li>TAFE</li>
+                            <li>Institute of Date</li>
+                        </ul>
+                    </div>
+                </section>
+                <section id="contact">
+                    <h2></h2>
+                    <p></p>
+                    <p></p>
+                </section>
+            </div>
+
             <footer>
                 <p></p>
                 <p></p>

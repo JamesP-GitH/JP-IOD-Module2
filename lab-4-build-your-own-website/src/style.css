@@ -1,5 +1,6 @@
 :root {
     --color-bg: #1a1a1d; /* Dark background */
+    --color-bg-opac: #1a1a1d63;
     --color-primary: #3b1c32; /* Deep maroon */
     --color-accent: #6a1e55; /* Rich purple-pink */
     --color-highlight: #a64d79; /* Lighter accent pink */
@@ -11,6 +12,12 @@
 
 * {
     margin: 0;
+}
+
+.audiowide-regular {
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 body {
@@ -46,6 +53,8 @@ a {
     left: 0;
     display: flex;
     flex-direction: column;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 10;
 }
 
 #hero {
@@ -88,8 +97,70 @@ a {
 
 main {
     margin-left: 380px;
-    padding: 40px;
     flex: 1;
+}
+
+#mainContainer {
+    padding-left: 30px;
+}
+
+/* === Splash == */
+
+#splash {
+    position: relative;
+    width: calc(100vw - 400px);
+    height: 100vh;
+    overflow: hidden;
+}
+
+.splashBlur {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, var(--color-bg-opac) 60%, var(--color-bg) 100%),
+        url(/lab-4-build-your-own-website/assets/denley-photography-_h_GmQ-UFjU-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(3px);
+    z-index: 1;
+}
+
+#splash::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-bg-opac); /* semi-transparent overlay */
+    z-index: 2;
+    pointer-events: none;
+}
+
+.splashHead {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    color: var(--color-highlight);
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    min-width: 400px;
+}
+
+.splashHead h1 {
+    font-size: 5em;
+}
+
+.splashHead p {
+    font-size: 2em;
 }
 
 /* === About === */
