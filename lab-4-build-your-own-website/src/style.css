@@ -3,9 +3,14 @@
     --color-primary: #3b1c32; /* Deep maroon */
     --color-accent: #6a1e55; /* Rich purple-pink */
     --color-highlight: #a64d79; /* Lighter accent pink */
-    --bar-background: #2a1a25;
+    --bar-background: #2a1a25; /*bar background muted */
     --bar-fill: #d16b93; /* highlight pinkish tone */
     --color-text: #f0f0f0; /* Light text for contrast */
+    --color-text-opac: #f0f0f093;
+}
+
+* {
+    margin: 0;
 }
 
 body {
