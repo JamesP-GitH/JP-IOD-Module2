@@ -44,6 +44,19 @@ a {
     flex-direction: column;
 }
 
+#hero {
+    text-align: center;
+}
+
+#hero h1 {
+    font-size: 48px;
+}
+
+#hero p {
+    font-size: 20px;
+    color: var(--color-text-opac);
+}
+
 #sidebar nav ul {
     list-style: none;
     padding: 0;
@@ -51,13 +64,15 @@ a {
 }
 
 #sidebar nav ul li {
-    margin: 20px 0;
+    text-align: center;
+    margin: 60px 0;
 }
 
 #sidebar nav ul li a {
     color: var(--color-text);
     text-decoration: none;
     font-weight: bold;
+    font-size: 24px;
     transition: color 0.2s ease;
 }
 
@@ -66,8 +81,8 @@ a {
 }
 
 main {
-    margin-left: 220px; /* same as sidebar width */
-    padding: 45px;
+    margin-left: 380px;
+    padding: 40px;
     flex: 1;
 }
 
