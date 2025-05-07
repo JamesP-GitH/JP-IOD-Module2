@@ -1,0 +1,425 @@
+:root {
+    --color-bg: #1a1a1d; /* Dark background */
+    --color-bg-opac: #1a1a1d63;
+    --color-primary: #3b1c32; /* Deep maroon */
+    --color-accent: #6a1e55; /* Rich purple-pink */
+    --color-highlight: #a64d79; /* Lighter accent pink */
+    --bar-background: #2a1a25; /*bar background muted */
+    --bar-fill: #d16b93; /* highlight pinkish tone */
+    --color-text: #f0f0f0; /* Light text for contrast */
+    --color-text-opac: #f0f0f093;
+}
+
+* {
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.audiowide-regular {
+    font-family: "Audiowide", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.hanken-grotesk-400 {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: sans-serif;
+}
+
+header,
+nav {
+    background-color: var(--color-primary);
+}
+
+h2 {
+    color: var(--color-highlight);
+    margin-top: 20px;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1.2em;
+}
+
+a {
+    color: var(--color-accent);
+}
+
+section {
+    margin-bottom: 80px;
+}
+
+p,
+span {
+    font-family: "Hanken Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+}
+
+strong {
+    color: var(--color-accent);
+    font-weight: 600;
+}
+
+/* === Sidebar === */
+
+#sidebar {
+    width: 300px;
+    background-color: var(--color-primary);
+    padding: 40px;
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+#hero {
+    text-align: center;
+}
+
+#hero h1 {
+    font-size: 48px;
+}
+
+#hero p {
+    font-size: 20px;
+    color: var(--color-text-opac);
+}
+
+#sidebar nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#sidebar nav ul li {
+    text-align: center;
+    margin: 60px 0;
+}
+
+#sidebar nav ul li a {
+    color: var(--color-text);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px;
+    transition: color 0.2s ease;
+}
+
+#sidebar nav ul li a:hover {
+    color: var(--color-highlight);
+}
+
+#sidebar nav ul li a:focus {
+    outline: none;
+    box-shadow: 0 0 4px 2px var(--color-accent);
+    border-radius: 4px;
+}
+
+/* === Main === */
+
+main {
+    margin-left: 380px;
+    flex: 1;
+}
+
+#mainContainer {
+    padding-left: 30px;
+}
+
+#about,
+#projects,
+#experience,
+#education,
+#contact {
+    padding: 60px 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    color: var(--color-text);
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* === Splash == */
+
+#splash {
+    position: relative;
+    width: calc(100vw - 400px);
+    height: 100vh;
+    overflow: hidden;
+}
+
+.splashBlur {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to bottom, var(--color-bg-opac) 60%, var(--color-bg) 100%),
+        url(/lab-4-build-your-own-website/assets/denley-photography-_h_GmQ-UFjU-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(3px);
+    z-index: 1;
+}
+
+#splash::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-bg-opac);
+    z-index: 2;
+    pointer-events: none;
+}
+
+.splashHead {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    color: var(--color-highlight);
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    min-width: 400px;
+}
+
+.splashHead h1 {
+    font-size: 5em;
+}
+
+.splashHead p {
+    font-size: 2em;
+}
+
+/* === About === */
+
+#about p {
+    margin-bottom: 1.2em;
+}
+
+#about em {
+    font-style: italic;
+    opacity: 0.9;
+}
+
+/* === Skills ===*/
+
+#skills {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.skill span {
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+.skillsGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 40px;
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.bar {
+    background: var(--bar-background);
+    width: 100%;
+    height: 12px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--color-accent), var(--bar-fill));
+    width: 0;
+    transition: width 2s ease-out;
+}
+
+/* === Specific Skill Levels === */
+.skill-html .fill {
+    --bar-width: 65%;
+}
+
+.skill-css .fill {
+    --bar-width: 60%;
+}
+
+.skill-javascript .fill {
+    --bar-width: 70%;
+}
+
+.skill-python .fill {
+    --bar-width: 45%;
+}
+
+.skill-java .fill {
+    --bar-width: 80%;
+}
+
+.skill-csharp .fill {
+    --bar-width: 95%;
+}
+
+.skill-cplus .fill {
+    --bar-width: 92%;
+}
+
+.skill-processing .fill {
+    --bar-width: 35%;
+}
+
+.bar.in-view .fill {
+    width: var(--bar-width); /* Animate the width to the specified value */
+}
+
+/* === Projects === */
+#projects {
+    padding: 60px 40px;
+    color: var(--color-text);
+}
+
+.project {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.project h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--color-accent);
+}
+
+.project p {
+    margin-bottom: 0.8em;
+    line-height: 1.6;
+}
+
+.projectImage {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.projectImage img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 40px;
+    opacity: 80%;
+}
+
+/* === Experience === */
+
+.job {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.job h3 {
+    font-size: 1.8rem;
+    color: var(--color-accent);
+    margin-bottom: 0.6em;
+}
+
+.job p {
+    margin-bottom: 1em;
+}
+
+/* === Education === */
+
+#education h3 {
+    font-size: 1.5rem;
+    color: var(--color-accent);
+    margin-bottom: 0.6em;
+}
+
+#education p,
+#education li {
+    margin-bottom: 1em;
+}
+
+#education ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+.school,
+.university {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+/* === Contact === */
+#contact a {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+.contactLinks {
+    margin-top: 1.5em;
+}
+
+.contactLinks a {
+    margin: 0 10px;
+    font-size: 1.4rem;
+}
+
+.contactCont {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+/* === Footer === */
+
+footer {
+    background-color: var(--color-primary);
+    color: var(--color-text-opac);
+    text-align: center;
+    padding: 2px 20px;
+    margin-top: 60px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    font-size: 14px;
+}
