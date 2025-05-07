@@ -28,19 +28,25 @@ a {
 }
 
 #skills {
-    max-width: 600px;
+    max-width: 1000px;
     margin: auto;
     padding: 20px;
 }
 
 .skill {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 15px;
 }
 
 .skill span {
-    display: inline-block;
-    margin-bottom: 5px;
+    margin-bottom: 6px;
     font-weight: bold;
+}
+.skillsGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px 40px; /* vertical and horizontal gap */
 }
 
 .bar {
