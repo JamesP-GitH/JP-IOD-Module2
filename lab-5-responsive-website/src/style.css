@@ -71,6 +71,21 @@ strong {
     font-weight: 600;
 }
 
+#menuToggle {
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 100;
+    background: var(--color-primary);
+    color: var(--color-text);
+    border: none;
+    font-size: 2rem;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
 /* === Sidebar === */
 
 #sidebar {
@@ -434,6 +449,14 @@ footer p {
         margin-left: 240px;
     }
 
+    #hero h1 {
+        font-size: 32px;
+    }
+
+    #splash {
+        width: 100%;
+    }
+
     .splashHead h1 {
         font-size: 3.5em;
     }
@@ -449,5 +472,102 @@ footer p {
     p,
     span {
         font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    #menuToggle {
+        display: block;
+    }
+
+    #sidebar {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        width: 250px;
+        height: 100vh;
+        flex-direction: column;
+        justify-content: flex-start;
+        transition: left 0.3s ease;
+        z-index: 99;
+    }
+
+    #sidebar.open {
+        left: 0;
+    }
+
+    #sidebar #hero {
+        margin-top: 80px;
+    }
+
+    main {
+        margin-left: 0;
+    }
+
+    #sidebar nav ul {
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+    }
+
+    #sidebar nav ul li {
+        margin: 50px 0;
+    }
+
+    main {
+        margin-left: 0;
+    }
+
+    #splash {
+        width: 100%;
+    }
+
+    .splashHead {
+        min-width: unset;
+        padding: 10px;
+    }
+
+    .splashHead h1 {
+        font-size: 2.5em;
+    }
+
+    .splashHead p {
+        font-size: 1.2em;
+    }
+
+    .skillsGrid {
+        grid-template-columns: 1fr;
+    }
+
+    #about,
+    #projects,
+    #experience,
+    #education,
+    #contact {
+        padding: 30px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    p,
+    span {
+        font-size: 16px;
+    }
+
+    .splashHead h1 {
+        font-size: 2em;
+    }
+
+    .splashHead p {
+        font-size: 1em;
+    }
+
+    .contactLinks a {
+        font-size: 1.2rem;
+        margin: 0 6px;
     }
 }

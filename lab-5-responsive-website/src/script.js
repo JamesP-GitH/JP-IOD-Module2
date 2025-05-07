@@ -33,6 +33,14 @@ function handleVisibilityChange() {
         });
     }
 }
+document.addEventListener("DOMContentLoaded", () => {
+    const menuToggle = document.getElementById("menuToggle");
+    const sidebar = document.getElementById("sidebar");
+
+    menuToggle.addEventListener("click", () => {
+        sidebar.classList.toggle("open");
+    });
+});
 
 window.addEventListener("scroll", checkBarsInView);
 window.addEventListener("load", checkBarsInView);
