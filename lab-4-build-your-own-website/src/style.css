@@ -26,11 +26,15 @@ nav {
 
 h2 {
     color: var(--color-highlight);
+    margin-bottom: 10px;
+    margin-top: 20px;
 }
 
 a {
     color: var(--color-accent);
 }
+
+/* === Sidebar === */
 
 #sidebar {
     width: 300px;
@@ -80,14 +84,24 @@ a {
     color: var(--color-highlight);
 }
 
+/* === Main === */
+
 main {
     margin-left: 380px;
     padding: 40px;
     flex: 1;
 }
 
+/* === About === */
+
+#about {
+    margin: auto;
+}
+
+/* === Skills ===*/
+
 #skills {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: auto;
     padding: 20px;
 }
